@@ -6,160 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HmBuilding</title>
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/main.css">
+
 </head>
-<style>
-    :root {
-        --background: #F5F5F5;
-  --primary: #EB6C27;
-  --text: #3a3a3a;
-  --text--gray: #888888;
-}
-    html{
-        overflow-x: hidden;
-}
-.page-header {
-    background-image:
-    linear-gradient(to bottom, rgba(36, 36, 36, 0.50), rgba(36, 36, 36, 0.70)),
-    url(../images/pageheader/pageheader720w.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-    min-height: 45vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-}
-
-.page-header__title {
-    font-weight: 800;
-    font-size: 2em;
-    color: white;
-    text-align: center;
-    margin-bottom: 0.5em;
-}
-
-
-nav.navigation {
-    position: absolute;
-    padding: 1.75em 0;
-    z-index: 999;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.3s;
-    background-color: var(--white);
-    font-weight: 400;
-    color: var(--grey);
-}
-
-.navigation__logo img {
-    height: 3em;
-}
-
-.navigation__menu {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    z-index: 2;
-    transition: 0.5s;
-}
-
-.navigation__menu .menu__item a {
-    padding: 2.6em 2.5em;
-    transition: 0.3s;
-    font-weight: 500;
-    color: var(--lightgrey);
-}
-
-
-
-
-/*______________________________________________________*/
-    
-   h2{
-    font-weight: 700;
-   }
-   .CTAblock{
-    margin: -1em;
-    margin-top: 2em;
-    width: 100vw;
-    opacity: 0.5;
-   }
-   .reference{
-    width: 100%;
-   }
-   .logo{
-    width: 50%;
-   }
-   body{
-    background-color: var(--background);
-    margin: 1em;
-    font-family: 'Open Sans';
-    color: var(--text);
-   }
-   .orange{
-    color: var(--primary);
-   }
-   .novostavby{
-    width: 100%;
-    border-radius: 0px 0px 40px 0px;
-   }
-   .prumysloveStavby{
-    width: 100%;
-    border-radius: 0px 0px 0px 20px;
-   }
-   .button_Primary{
-    background-color: var(--background);
-    border: 2px dashed var(--primary);
-  color: var(--primary);
-  padding: 15px 40px;
-  text-align: center;
-  margin-bottom: 2em;
-  font-weight: 1000;
-  text-decoration: none;
-   }
-   .button_Orange{
-    background-color: var(--primary);
-  color: white;
-  border: none;
-  padding: 12px 40px;
-  text-align: center;
-  margin-bottom: 2em;
-  font-weight: 1000;
-  text-decoration: none;
-   }
-
-   .button_White{
-    background-color: white;
-  color: var(--primary);
-  border: none;
-  padding: 20px 50px;
-  text-align: center;
-  margin-bottom: 2em;
-  font-weight: 1000;
-  text-decoration: none;
-   }
-
-
-   .BoxReference{
-    text-align: center;
-   }
-
-   footer{
-    text-align: center;
-    background-color: var(--primary);
-    padding-top: 40px;
-    margin: -1em;
-    color: white;
-    height: 30vh;
-   }
-   footer >p{
-    padding-bottom: 20px;
-   }
-</style>
 <body>
     <main>
         <header class="header">
@@ -195,52 +45,57 @@ nav.navigation {
             </div>
         </header>
 
-        <h2>Využijte škálu našich <span class="orange">služeb</span></h2>
-        <p>Ačkoliv provádíme především <strong>průmyslové stavby</strong>, není pro nás problém postavit Vám <strong>rodinný domek na klíč</strong>, nebo jen hrubou stavbu. Nejsou nám cizí ani <strong>rekonstrukce budov</strong> a jejich údržba a to včetně okolních ploch.</p>
-    <img class="novostavby" src="./media/sluzba-novostavby-1200w.jpg">
-        <h2>Novostavby</h2>
-            <p>
-                Dle požadavků investora jsme schopní dodat <strong>kompletní stavbu na klíč</strong>, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.
-                Provádíme stavby jak průmyslového typu, tak rodinné stavby.
-                </p>
-                <button class="button_Primary">Zobrazit více</button>
-            <img class="prumysloveStavby" src="./media/sluzba-prumyslove-stavby-1920w.jpg">
-            <h2>Průmyslové stavby</h2>
-            <p>Realizujeme <strong>průmyslové objekty ocelové konstrukce</strong>, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím se <strong>dostáváme na přijatelné ceny</strong>.</p>
-            <button class="button_Primary">Zobrazit více</button>
-            <img class="novostavby" src="./media/sluzba-rekonstrukce-1920w.jpg">
-                
-                <h2>Rekonstrukce domů a jiných staveb</h2>
-                <p>Provádíme veškeré práce spojené s <strong>rekonstrukcí stávajících objektů</strong>. Pro naše klienty zajišťujeme dodatečné izolování objektů, <strong>zateplení objektů</strong>, změnu vnitřních i vnějších dispozic stávajících objektů a demolice stávajících staveb. </p>
-                <button class="button_Primary">Zobrazit více</button>
-                <img class="novostavby" src="./media/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg">
-                
-                <h2>Komunikace a zpevněné plochy</h2>
-                <p>Komunikace a zpevněné plochy provádíme včetně <strong>zemních prací, konstrukcí podkladních</strong> a souvisejících objektů, jako jsou <strong>odvodnění, zpevnění svahů, opěrné zdi</strong> atd.</p>
-                <button class="button_Primary">Zobrazit více</button>
-                <img class="CTAblock" src="./media/background-CTAblock-4460w.jpg">
-                <h2>Rádi vám ukážeme <br>
-                    naše<span class="orange"> reference</span> </h2>
-                <p>Stojí za námi <strong>kvalitně vyhotovené zakázky</strong> dle konkrétních požadavků zadavatelů p<strong>odepřené letitými zkušenostmi ve stavebnictví</strong>. To, že <strong>obrátit se na právě nás je vhodná volba potvrdí naši klienti</strong>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
-            <div class="BoxReference">
-            <img class="reference" src="./media/reference/reference-hasicska-zbrojnice-600w.jpg">
-            <h2>Hasičská zbrojnice</h2>
-            <p>celková rekonstrukce</p>
-            <img class="reference" src="./media/reference/reference-pradelna-600w.jpg">
-            <h2>Samoobslužná prádelna</h2>
-            <p>stavební opravy</p>
-            <img class="reference" src="./media/reference/reference-plocha-600w.jpg">
-            <h2>Venkovní plochy Restyl</h2>
-            <p>provedení venkovních ploch</p>
-            </div>
-            <button class="button_Orange">Více referencí</button>
+        <section class="services">
+            <div class="sevices__content">
+                <div class="services__intem services__item--header">
+                    <div class="item__flex">
+                        <p class="item__title">Využijte škálu našich <span class="item__title--marked">služeb</span></p>
+                        <p class="item__description">Ačkoliv provádíme především <b>průmyslové stavby</b>, není pro nás problém postavit Vám <b>rodinný domek na klíč</b>, nebo jen hrubou stavbu. Nejsou nám cizí ani <b>rekonstrukce budov</b> a jejich údržba a to včetně okolních ploch.</p>
+                    </div>
+                </div>
 
-            <footer>
-                <h2>Plácneme si na Váš projekt?</h2>
-                <p>Nezávazně nás kontaktujte a domluvme <br>
-                vše potřebné.</p>
-                <button class="button_White">Nezávazně poptat</button>
-            </footer>
+                <div class="services__item services__item--img-newbuidlings" >
+                    <div class="item__flex">
+                        <p class="item__title">NOVOSTAVBY</p>
+                        <p class="item__description">Dle požadavků investora jsme schopní dodat <b>kompletní stavbu na klíč</b>, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.</p>
+                        <p class="item__description">Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
+                        <button class="item__button button button--hover-main">
+                            <a href="./sites/newbuildings.html">Zobrazit více</a>
+                        </button>
+                    </div>
+                </div>
+        
+                <div class="services__item services__item--img-industrialbuildings" >
+                    <div class="item__flex">
+                        <p class="item__title">PRŮMYSLOVÉ STAVBY</p>
+                        <p class="item__description">Realizujeme <b>průmyslové objekty ocelové konstrukce</b>, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím se <b>dostáváme na přijatelné ceny</b>.</p>
+                        <button class="item__button button button--hover-main">
+                            <a href="./sites/industrialbuildings.html">Zobrazit více</a>  
+                        </button>      
+                    </div>
+                </div>
+        
+                <div class="services__item services__item--img-reconstructions" >
+                    <div class="item__flex">
+                        <p class="item__title">REKONSTRUKCE DOMŮ A JINÝCH STAVEB</p>
+                        <p class="item__description">Provádíme veškeré práce spojené s <b>rekonstrukcí stávajících objektů</b>. Pro naše klienty zajišťujeme dodatečné izolování objektů, <b>zateplení objektů</b>, změnu vnitřních i vnějších dispozic stávajících objektů a demolice stávajících staveb. </p>
+                        <button class="item__button button button--hover-main">
+                            <a href="./sites/reconstructions.html">Zobrazit více</a>  
+                        </button>
+                    </div>
+                </div>
+        
+                <div class="services__item services__item--img-communicationarea" >
+                    <div class="item__flex">
+                        <p class="item__title">KOMUNIKACE A ZPEVNĚNÉ PLOCHY</p>
+                        <p class="item__description">Komunikace a zpevněné plochy provádíme včetně <b>zemních prací, konstrukcí podkladních</b> a souvisejících objektů, jako jsou <b>odvodnění, zpevnění svahů, opěrné zdi</b> atd.</p>
+                        <button class="item__button button button--hover-main">
+                            <a href="./sites/communicationarea.html">Zobrazit více</a>  
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
         </main>
 </body>
 </html>
