@@ -35,38 +35,83 @@ color: var(--background);
 text-align: center;
 }
 
+.page-header.page-header--img-none {
+    display: none;
+}    
+
+.page-header {
+    background-image:
+    linear-gradient(to bottom, rgba(36, 36, 36, 0.50), rgba(36, 36, 36, 0.70)),
+    url(../media/pageheader-1920w.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.page-header__title {
+    font-weight: 800;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.page-header__title--break {
+    display: block;
+    font-weight: 300;
+    margin-top: 0.5em;
+    font-size: 0.6em;
+}
+
 
 nav.navigation {
-position: absolute;
-padding: 1.75em 0;
-z-index: 5;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: var(--background);
-font-weight: 400;
-color: var(--text);
+    position: absolute;
+    padding: 1.75em 0;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    background-color: var(--white);
+    font-weight: 400;
+    color: var(--grey);
 }
 
 .navigation__logo img {
-height: 3em;
+    height: 3em;
 }
 
 .navigation__menu {
-display: flex;
-justify-content: center;
-flex-direction: row;
-align-items: center;
-z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.navigation__menu .menu__item {
+    list-style-type: none;
 }
 
 .navigation__menu .menu__item a {
-padding: 2.6em 2.5em;
-font-weight: 500;
-color: var(--text--gray);
+    padding: 2.6em 2.5em;
+    transition: 0.3s;
+    font-weight: 500;
+    color: var(--lightgrey);
 }
 
+
+.navigation__menu .menu__item a:hover {
+    box-shadow: 0 -5px 0px var(--main) inset, 
+    500px 0 0 rgba(235, 108, 39, 0.1) inset;
+}
 
 .page-header .page-header--img none{
     display: none;
@@ -186,4 +231,57 @@ button {
 .services__item--img-communicationarea::before {
     background: url(../media/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg);
     background-position: center;
+}
+
+.confidence {
+    background-image:
+    linear-gradient(to bottom, rgba(36, 36, 36, 0.85), rgba(36, 36, 36, 0.85)),
+    url(../media/background-CTAblock-4460w.jpg);
+    background-repeat: no-repeat;
+    font-weight: 800;
+    background-position: center;
+    background-size: cover;
+    padding: 1.5em;
+    color: white;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 20vh;
+    padding: 1.5em;
+}
+
+.confidence__content {
+    max-width: 1600px;
+}
+
+footer {
+    padding: 1.5em;
+    text-align: center;
+    background-color: #EB6C27;
+    color: white;
+}
+
+.footer__button {
+    background-color: var(--white);
+    padding: 20px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+.footer__button a {
+    color: var(--main);
+}
+
+.footer__description {
+    margin-bottom: 2em;
+    font-weight: 400;
+}
+
+.footer__title {
+    margin-top: 1.5em;
+    font-weight: 800;
+    font-size: 1.40em;
+    margin-bottom: 1em;
 }
