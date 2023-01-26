@@ -71,3 +71,119 @@ color: var(--text--gray);
 .page-header .page-header--img none{
     display: none;
 }
+
+
+.button__arrow-down {
+    margin-left: 15px;
+    margin-bottom: 3px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 8px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.button {
+    width: 250px;
+    padding: 12px 40px;
+    display: block;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: var(--main);
+}
+
+button {
+    border: none;
+    outline:none;
+}
+
+
+.button a {
+    color: var(--white);
+}
+
+.page-header__button {
+    display: none;
+    margin-top: 2em;
+    padding: 20px 50px;
+    font-size: 1.2em;
+}
+
+
+
+.services {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services__content {
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+    gap: 2em;
+}
+
+.services__item .button {
+    padding: 12px 40px;
+    color:#EB6C27;
+    width: 12em;
+    border: dashed;
+    border-width: 2px;
+    background-color: var(--white);
+}
+
+.services__item .button a {
+    color:#EB6C27;
+}
+
+
+.services__item--header {
+    margin: 5em 0em;
+}
+
+.services__item--img-communicationarea::before, .services__item--img-industrialbuildings::before, .services__item--img-newbuidlings::before, .services__item--img-reconstructions::before{
+    content: '';
+    display: block;
+    min-height: 15vh;
+    background-image: unset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.services__item:nth-child(odd)::before{
+    border-radius: 0 0 0 40px;
+    background-position: center;
+}
+
+.services__item:nth-child(even)::before{
+    border-radius: 0 0 40px 0;
+}
+
+.services__item--img-newbuidlings::before {
+    background-image: url(../media/sluzba-novostavby-1200w.jpg);
+    background-position: center;
+}
+
+
+.services__item--img-industrialbuildings::before {
+    background: url(../media/sluzba-prumyslove-stavby-1920w.jpg);
+    background-position: center;
+}
+
+.services__item--img-reconstructions::before {
+    background: url(../media/sluzba-rekonstrukce-1920w.jpg);
+    background-position: center;
+}
+
+.services__item--img-communicationarea::before {
+    background: url(../media/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg);
+    background-position: center;
+}
