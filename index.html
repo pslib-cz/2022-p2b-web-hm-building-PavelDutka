@@ -7,11 +7,11 @@
     <title>HmBuilding</title>
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/primary.css">
 
 </head>
 <body>
-    <main>
+    <primary>
         <header class="header">
             <nav class="navigation">
                 <div class="navigation__logo"><a href="./index.html"><img src="./media/logo.png" alt="Logo firmy"></a>
@@ -25,8 +25,11 @@
                     <li class="menu__item"><a href="./aboutus.html">O NÁS</a></li>
                     <li class="menu__item"><a href="./contact.html">KONTAKT</a></li>
                 </menu>
-                <a class="hamburger" href="javascript:void(0)">menu</a>
-                
+                <div class="navigation__hamburger">
+                    <input type="checkbox" class="hamburger__toggle-menu">
+                    <p class="hamburger__hamburger-description">MENU</p>
+                    <span class="hamburger__hamburger-line"></span>
+                </div>
             </nav>
     
             <div class="page-header">
@@ -54,7 +57,7 @@
                         <h2 class="item__title">NOVOSTAVBY</h2>
                         <p class="item__description">Dle požadavků investora jsme schopní dodat <b>kompletní stavbu na klíč</b>, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.</p>
                         <p class="item__description">Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
-                        <button class="item__button button button--hover-main">
+                        <button class="item__button button button--hover-primary">
                             <a href="./newbuildings.html">Zobrazit více</a>
                         </button>
                     </div>
@@ -64,7 +67,7 @@
                     <div class="item__flex">
                         <h2 class="item__title">PRŮMYSLOVÉ STAVBY</h2>
                         <p class="item__description">Realizujeme <b>průmyslové objekty ocelové konstrukce</b>, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím se <b>dostáváme na přijatelné ceny</b>.</p>
-                        <button class="item__button button button--hover-main">
+                        <button class="item__button button button--hover-primary">
                             <a href="./industrialbuildings.html">Zobrazit více</a>  
                         </button>      
                     </div>
@@ -74,7 +77,7 @@
                     <div class="item__flex">
                         <h2 class="item__title">REKONSTRUKCE DOMŮ A JINÝCH STAVEB</h2>
                         <p class="item__description">Provádíme veškeré práce spojené s <b>rekonstrukcí stávajících objektů</b>. Pro naše klienty zajišťujeme dodatečné izolování objektů, <b>zateplení objektů</b>, změnu vnitřních i vnějších dispozic stávajících objektů a demolice stávajících staveb. </p>
-                        <button class="item__button button button--hover-main">
+                        <button class="item__button button button--hover-primary">
                             <a href="./reconstructions.html">Zobrazit více</a>  
                         </button>
                     </div>
@@ -84,7 +87,7 @@
                     <div class="item__flex">
                         <h2 class="item__title">KOMUNIKACE A ZPEVNĚNÉ PLOCHY</h2>
                         <p class="item__description">Komunikace a zpevněné plochy provádíme včetně <b>zemních prací, konstrukcí podkladních</b> a souvisejících objektů, jako jsou <b>odvodnění, zpevnění svahů, opěrné zdi</b> atd.</p>
-                        <button class="item__button button button--hover-main">
+                        <button class="item__button button button--hover-primary">
                             <a href="./communicationarea.html">Zobrazit více</a>  
                         </button>
                     </div>
@@ -97,21 +100,64 @@
                 <p class="content__description">Naše firma nabízí své služby 
                     ve stavebnictví od roku 2015.
                 <span class="content__description--break">Za kvalitu naší práce ručíme.</span></p>
-                <button class="content__button button button--hover-darkmain">
+                <button class="content__button button button--hover-darkprimary">
                     <a href="./references.html">Přesvědčit se</a>
                 </button>
             </div>
+        </section>
+
+        <section class="references" id="reference">
+            <div class="references__item references__item--header">
+                <p class="item__title">Rádi vám ukážeme naše <span class="item__title--marked">reference</span></p>
+                <p class="item__description">Stojí za námi <b>kvalitně vyhotovené zakázky</b> dle konkrétních požadavků zadavatelů <b>podepřené letitými zkušenostmi ve stavebnictví.</b> To, že <b>obrátit se na právě nás je vhodná volba potvrdí naši klienti</b>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
+            </div>
+    
+            <div class="references__item">
+                <a class="item__link" href="./sites/references.html">
+                    <img class="link__image" src="./media/reference/reference-hasicska-zbrojnice-600w.jpg" alt="Hasičárna">
+                    <div class="link__overlay">
+                        <p class="overlay__title">Hasičská zbrojnice</p>
+                        <p class="overlay__description">celková konstrukce</p>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="references__item">
+                <a class="item__link" href="./sites/references.html">
+                    <img class="link__image" src="./media/reference/reference-pradelna-600w.jpg" alt="Prádelna">
+                    <div class="link__overlay">
+                        <p class="overlay__title">Samoobslužná prádelna</p>
+                        <p class="overlay__description">stavební úpravy a opravy</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="references__item">
+                <a class="item__link" href="./sites/references.html">
+                    <img class="link__image" src="./media/reference/reference-plocha-600w.jpg" alt="Dlaždičky">
+                    <div class="link__overlay">
+                        <p class="overlay__title">Venkovní ploch Restyl</p>
+                        <p class="overlay__description">provedení venkovních ploch</p>
+                    </div>
+                </a>
+            </div>
+            
+        
+    
+            <button class="references__button button button--hover-darkprimary">
+                <a  href="./reference.html">Více referencí</a>
+            </button>
         </section>
     
        
         <footer class="footer">
             <p class="footer__title">Plácneme si pro váš projekt?</p>
             <p class="footer__description">Nezávazně nás kontaktujte a domluvme vše potřebné</p>
-            <button class="footer__button button button--hover-darkmain">
+            <button class="footer__button button button--hover-darkprimary">
                 <a href="./contact.html">Nezávazně poptat</a>
             </button>
         </footer>
-    </main>
+    </primary>
 </body>
 </html>
 
