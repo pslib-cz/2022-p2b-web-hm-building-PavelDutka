@@ -10,8 +10,6 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     color: var(--text);
     background-color: var(--background);
 }
@@ -19,18 +17,6 @@ body {
 *{
     margin: 0;
     padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    width: 100%;
-    display: block;
-    margin: 0;
-    padding: 0;
-    object-fit: cover;
 }
 
 nav.navigation {
@@ -62,6 +48,7 @@ nav.navigation {
     font-weight: 500;
     color: var(--text--gray);
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 
@@ -215,6 +202,11 @@ button {
     padding: 20px 50px;
     font-size: 1.2em;
 }
+
+.page-header__button:hover{
+    background-color: var(--background);
+    color: var(--primary);
+}   
 
 .services {
     max-width: 1600px;
@@ -492,8 +484,9 @@ footer {
     "contacts ."
     "map map"
     "form .";
-    width: 100%;
 }
+
+
 .grid__contacts {
     grid-area: contacts;
     margin-left: 1.5em;
@@ -502,7 +495,6 @@ footer {
 .grid__map {
     grid-area: map;
     margin: 0;
-    width: 100%;
 }
 
 .grid__form {
@@ -519,12 +511,24 @@ footer {
 }
 
 .contacts__description {
+    display: block;
     position: relative;
     margin-left: 3em;
     margin-top: 3em;
     margin-bottom: 3em;
     font-weight: 800;
     color: var(--primary);
+}
+
+.contacts__description::before {
+    bottom: -10px;
+    left: -50px;
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: var(--primary);    
 }
 .icon-dot {
     position: relative;
@@ -541,19 +545,19 @@ footer {
     background-color: var(--primary);    
 }
 .icon-dot--phone::before {
-    content: url("../media/local_phone_24px.svg");
+    content: url("./media/local_phone_24px.svg");
     position: absolute;
     left: -45px;
     z-index: 1;
 }
 .icon-dot--mail::before {
-    content: url("../media/mail_24px.svg");
+    content: url("./media/mail_24px.svg");
     position: absolute;
     left: -45px;
     z-index: 1;
 }
 .icon-dot--position::before {
-    content: url("../media/room_24px.svg");
+    content: url("./media/room_24px.svg");
     position: absolute;
     left: -42px;
     z-index: 1;
@@ -571,7 +575,30 @@ label {
     font-weight: 800;
 }
 
-
+input[type=text], select, textarea {
+    font-weight: 800;
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid var(--primary);
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: var(--primary);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    min-width: 19em;
+    padding: 1.5em;
+  }
+  
+  input[type=submit]:hover {
+    background-color: var(--primary);
+  }
   
   .container {
     background-color: var(--background);
@@ -757,6 +784,7 @@ label {
 
     .grid__map {
         position: relative;
+        max-width: 100%;
     }
 
     .content__description--centered {
@@ -792,6 +820,15 @@ label {
         margin-right: auto;
     }
 
+    .link__image{
+            width: 100%;
+            display: block;
+            margin: 0;
+            padding: 0;
+            object-fit: cover;
+        
+    }
+
     .services__item::before{
         min-height: 25vh;
     }
@@ -802,19 +839,20 @@ label {
         padding-top: 2em;
     }
 
-    .button--hover-main:hover {
+    .button--hover-primary:hover {
         background-color: var(--primary);
+        color: var(--background);
     }
 
     .button--hover-main:hover a {
         color: var(--background);
     }
 
-    .button--hover-darkmain:hover {
+    .button--hover-darkprimary:hover {
         background-color: var(--text);
     }
 
-    .button--hover-darkmain:hover a {
+    .button--hover-darkprimary:hover a {
         color: var(--background);
     }
 
@@ -889,6 +927,7 @@ label {
         gap: 4em;
     }
 
+    
 
     .content__list {
         margin-left: 6em;

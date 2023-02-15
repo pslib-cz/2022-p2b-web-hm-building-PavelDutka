@@ -42,7 +42,7 @@
 
         <section class="contact">
             <div class="contact__content">
-                <p class="content__title">Kontaktujte nás</p>
+                <h2 class="content__title">Kontaktujte nás</h2>
                 <p class="content__description content__description--centered">
                     Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.
                 </p>
@@ -57,11 +57,36 @@
                         <img class="map__img" src="./media/mapa.jpg" alt="Mapa">
                         <span class="map__overlay"></span>
                     </div>
-                    
-        
+                    <div class="grid__form">
+                        <p class="form__title">Nezávazná poptávka služeb</p>
+                        <p class="form__description">
+                            Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.
+                        </p>
+            
+                        <div class="form-labels">
+                            <form action="">
+            
+                                <label for="fullname">Jméno a příjmení</label>
+                                <input type="text" id="fullname" name="fullname">
+                            
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email">
+                                        
+                                <label for="phone">Telefon</label>
+                                <input type="text" id="phone" name="phone">
+                        
+                            
+                                <label for="subject">Poznámka</label>
+                                <textarea id="subject" name="subject" placeholder="" style="height:300px"></textarea>
+                            
+                                <input class="button" type="submit" value="Odeslat nezávaznou poptávku">
+                              </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+    </main>
 </body>
 </html>
 
